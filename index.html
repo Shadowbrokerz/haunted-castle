@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Haunted Castle mini game</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.2.2/semantic.min.css">
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.2.2/semantic.min.js"></script>
+    <!-- GAME SOUNDS -->
+    <audio id="gemsound">
+      <source src="music/gem.mp3" type="audio/mpeg">
+    </audio>
+    <audio id="enemysound">
+      <source src="music/enemy.mp3" type="audio/mpeg">
+    </audio>
+    <audio id="deadsound">
+      <source src="music/dead.mp3" type="audio/mpeg">
+    </audio>
+    <audio id="pianosound">
+      <source src="music/piano.mp3" type="audio/mpeg">
+    </audio>
+    <audio id="movesound">
+      <source src="music/move.mp3" type="audio/mpeg">
+    </audio>
+    <audio id="bgm">
+      <source src="music/background.mp3" type="audio/mp3">
+    </audio>
+    <audio id="bosssound">
+      <source src="music/bossm.mp3" type="audio/mp3">
+    </audio>
+</head>
+<body>
+    <p id="music">Music: <a href="#" id="mute" onclick="unmute()">On</a>/<a href="#" id="mute" onclick="mute()">Off</a></p>
+    <div id="overlay"></div>
+    <div id="welcome">
+      <a href="#" id="start" Onclick="start()">START</a>
+    </div>
+    <div id="gameovertext">
+        <h1>GAME OVER</h1>
+        <table class="ui table inverted orange">
+          <tr>
+            <td><img src="images/Gem Blue.png" width="30" height="50">
+                <img src="images/Gem Green.png" width="30" height="50">
+                <img src="images/Gem Orange.png" width="30" height="50">
+            </td>
+          <td><p id="tgems"></p><p id="ttime"></p></td>
+          <a href="#" onclick="retry()">Retry</a>
+          </tr>
+        </table>
+    </div>
+    <script src="js/resources.js"></script>
+    <script src="js/app.js"></script>
+    <script src="js/engine.js"></script>
+    <table id="scoreboard" class="ui table unstackable inverted small">
+      <td><img src="images/Heart.png"></td><td id="health"></td>
+      <td><img src="images/Gem Orange-s.png"><img src="images/Gem Blue-s.png"><img src="images/Gem Green-s.png"></td><td id="gems">0</td>
+      <td>Record:</td><td id="hscore">0</td>
+      <td>Time:</td><td id="time">0:00</td>
+    </table>
+</body>
+</html>
+<script>

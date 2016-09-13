@@ -1,0 +1,75 @@
+body {
+  text-align: center;
+  position: relative;
+  transition: background-color 0.2s ease-out;
+  background-color: black;
+}
+
+#scoreboard {
+  width: 350px;
+  margin: auto;
+  display: none;
+}
+
+html,
+body {
+  min-height: 100%;
+}
+
+#overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  z-index: 10;
+  background-color: rgba(0, 0, 0, 0.8);
+  display: none;
+}
+
+#welcome {
+  width: 300px;
+  height: 200px;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  margin-top: -100px;
+  margin-left: -150px;
+  background-color: #f1c40f;
+  border-radius: 5px;
+  text-align: center;
+  z-index: 11;
+}
+
+#welcome a {
+  display: block;
+  margin-top: 30%;
+  font-size: 30px;
+}
+
+#gameovertext {
+  width: 300px;
+  height: 200px;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  margin-top: -100px;
+  margin-left: -150px;
+  background-color: #f1c40f;
+  border-radius: 5px;
+  text-align: center;
+  z-index: 11;
+  display: none;
+}
+
+a {
+  font-size: 20px;
+}
+
+#music {
+  color: white;
+}
+
+#scoreboard img {
+  width: 10px;
+}
