@@ -22,7 +22,10 @@ $ git clone https://github.com/shadowbrokerz/haunted-castle
 
 **2.** Download manually and click on index.html:
 
-###### Artwork
+  ### OR 
+  [Play it Online](https://acicco.github.io/haunted-castle)
+
+  ###### Artwork
 - Floor textures - Udacity/Alan C.
 - Gem textures by Udacity/Edited by Alan C.
 - Guinea pig by Joe Vilema.
